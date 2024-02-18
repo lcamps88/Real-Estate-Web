@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FONTS */
+
+h1 {
+  @apply font-satoshi text-5xl font-light leading-[4.8rem] tracking-[0.19rem] text-center uppercase; /* 64px */
+}
+
+h2 {
+  @apply font-satoshi text-6xl font-light leading-[7.5rem] tracking-[0.19rem] text-center uppercase; /* 120px */
+}
+
+h3 {
+  @apply font-satoshi text-4xl font-light leading-[4rem] tracking-[0.19rem] text-center uppercase; /*40px */
+}
+
+h3.light {
+  @apply font-outfit text-4xl font-light leading-[4rem] tracking-[0.19rem] text-center text-primary-orange; /*40px */
+}
+
+p {
+  @apply font-outfit text-base font-normal leading-7 mb-7 text-primary-grey; /* 16px */
+}
+
+h4 {
+  @apply font-outfit text-base font-light tracking-[0.31rem]  text-center text-primary-orange uppercase; /* 16px */
+}
+
+.link_footer {
+  @apply font-outfit text-base font-normal leading-7 hover:text-primary-orange;
+}
+
+/* BUTTONS */
+
+.btn_primary {
+  @apply inline-block font-outfit text-white leading-5 text-base font-bold uppercase tracking-[0.31rem] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange;
+}
+
+.btn_secondary {
+  @apply inline-block font-outfit text-primary-orange text-sm leading-5  font-bold uppercase tracking-[0.31rem] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange;
+}
+
+/* GRADIENT ELEMENTS */
+/* SECTIONS */
+
+.full_wrapper {
+  @apply flex items-center justify-center flex-wrap h-[auto] w-full overflow-clip;
+}
+.footer {
+  @apply w-full bg-dark-black;
+}
+
+.line_footer {
+  @apply text-center lg:text-left justify-center lg:justify-between items-center py-10 border-t border-solid border-primary-orange;
+}
+
+/* UTILS */
+.responsive_container_width {
+  @apply max-w-[85vw] xl:max-w-[86.56vw] 3xl:max-w-[80.56vw]  4xl:max-w-[76.56vw];
+}
+.responsive_container_width_big {
+  @apply max-w-[85vw] xl:max-w-[88.56vw] 4xl:max-w-[86.45vw];
+}
+.responsive_container_width_nav {
+  @apply max-w-[90vw] lg:max-w-[95vw] xl:max-w-[90vw] 4xl:max-w-[86.45vw];
+}
+.responsive_work_card_small {
+  @apply w-full h-auto min-h-[50.25vw] md:min-h-[24.25vw] xl:min-h-[16.25vw] max-h-[50.25vw] md:max-h-[24.25vw] xl:max-h-[16.25vw];
+}
+.responsive_work_card_big {
+  @apply w-full h-auto min-h-[105.25vw] md:min-h-[52.33vw] xl:min-h-[35.33vw] max-h-[105.25vw] md:max-h-[52.33vw] xl:max-h-[35.33vw];
+}
