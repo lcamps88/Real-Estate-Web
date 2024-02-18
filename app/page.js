@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Hero from '@/components/Hero'
+import WorkWithUs from '@/components/WorkWithUs'
 
 export const metadata = {
   title: 'Real Estate 4 All',
@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <WorkWithUs />
     </>
   )
 }

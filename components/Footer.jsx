@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className='footer'>
-      <Container customStyle='flex flex-row justify-between items-start responsive_container_width py-[6.25rem]'>
+      <Container customStyle='flex flex-row flex-wrap justify-between items-start responsive_container_width py-[6.25rem]'>
         <div>
           <Link href='/' passHref>
             <Image src={LogoFooter} alt='ITorres Solution' />
