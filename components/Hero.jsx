@@ -22,8 +22,7 @@ const Hero = () => {
       </p>
 
       <h4>subscribe to our mailing list</h4>
-      <CustomButton className='btn_secondary'>Button</CustomButton>
-      <CustomButton className='btn_primary'>Button</CustomButton>
+
 
       {/* <ServicesCard
         image='bg-buying_home'
