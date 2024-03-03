@@ -22,7 +22,6 @@ const RootLayout = ({ children }) => {
       </head>
       <body>
         <main className='full_wrapper'>
-          <Header />
           {children}
           <Footer/>
         </main>

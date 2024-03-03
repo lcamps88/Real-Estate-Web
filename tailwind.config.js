@@ -20,10 +20,11 @@ module.exports = {
         'primary-grey': '#3F3F3F',
         'secondary-grey': '#22252A',
         'dark-black': '#060507',
-        'hero-opacity-25': 'rgba(0, 0, 0, 0.25)',
+        'hero-opacity-25': 'rgba(0, 0, 0, 0.5)',
         'card-opacity-48': 'rgba(0, 0, 0, 0.48)',
         'neighborhoods-opacity-34': 'rgba(0, 0, 0, 0.34)',
         'contact-opacity-81': 'rgba(0, 0, 0, 0.81)',
+        'opacity-property': 'rgba(255, 255, 255, 0.9)',
       },
       backgroundImage: {
         selling_home: "url('/images/selling_home.webp')",
@@ -35,6 +36,10 @@ module.exports = {
         realtor: "url('/images/realtor.webp')",
         footer_logo: "url('/images/footer_logo.webp')",
         logo: "url('/images/logo.webp')",
+        hero: "url('/images/hero-image.webp')",
+      },
+      backgroundVideo:{
+        hero_video: "url('/video/hero-bg.mp4')",
       },
       screens: {
         xsm: '414px',
