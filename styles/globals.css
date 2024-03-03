@@ -8,19 +8,19 @@
 /* FONTS */
 
 h1 {
-  @apply font-satoshi text-5xl font-light leading-[4.8rem] tracking-[0.19rem] text-center uppercase; /* 64px */
+  @apply font-satoshi text-5xl md:text-6xl lg:text-7xl xl:text-[5rem] 2xl:text-8xl 3xl:text-[7rem] font-light leading-[4rem] uppercase text-center tracking-[.19em] md:tracking-[.12em] md:leading-[5rem] xl:leading-[6rem] 2xl:leading-[7.5rem]; /* 120px */
 }
 
 h2 {
-  @apply font-satoshi text-6xl font-light leading-[7.5rem] tracking-[0.19rem] text-center uppercase; /* 120px */
+  @apply font-satoshi text-4xl md:text-5xl xl:text-6xl 2xl:text-[4rem] font-light leading-[3rem] md:leading-[3.8rem] lg:leading-[4rem] 2xl:leading-[5rem] tracking-[.12em] xl:tracking-[.19em] text-center uppercase; /* 64px */
 }
 
 h3 {
-  @apply font-satoshi text-4xl font-light leading-[4rem] tracking-[0.19rem] text-center uppercase; /*40px */
+  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[4rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
 }
 
 h3.light {
-  @apply font-outfit text-4xl font-light leading-[4rem] tracking-[0.19rem] text-center text-primary-orange; /*40px */
+  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[3.2rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
 }
 
 p {
@@ -28,21 +28,29 @@ p {
 }
 
 h4 {
-  @apply font-outfit text-base font-light tracking-[0.31rem]  text-center text-primary-orange uppercase; /* 16px */
+  @apply font-outfit text-base font-light tracking-[.31em] text-center text-primary-orange uppercase; /* 16px */
 }
 
 .link_footer {
   @apply font-outfit text-base font-normal leading-7 hover:text-primary-orange;
 }
 
+.nav_menu {
+  @apply font-outfit text-sm font-light tracking-[.31em] text-white uppercase;
+}
+
 /* BUTTONS */
 
 .btn_primary {
-  @apply inline-block font-outfit text-white leading-5 text-base font-bold uppercase tracking-[0.31rem] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange;
+  @apply inline-block font-outfit text-white leading-5 text-base font-bold uppercase tracking-[.31em] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange hover:bg-primary-orange;
 }
 
 .btn_secondary {
-  @apply inline-block font-outfit text-primary-orange text-sm leading-5  font-bold uppercase tracking-[0.31rem] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange;
+  @apply inline-block font-outfit text-primary-orange text-sm leading-5  font-bold uppercase tracking-[.31em] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange hover:bg-white;
+}
+
+.btn_full {
+  @apply inline-block font-outfit text-white text-sm leading-5 font-bold uppercase tracking-[.31em] text-center bg-primary-orange;
 }
 
 /* GRADIENT ELEMENTS */
@@ -59,10 +67,51 @@ h4 {
   @apply text-center lg:text-left justify-center lg:justify-between items-center py-10 border-t border-solid border-primary-orange;
 }
 
+.hero {
+  @apply w-full relative min-h-[55rem] xl:min-h-[60rem];
+}
+
+.custom-width-45 {
+  width: 47%;
+}
+@media (max-width: 780px) {
+  .custom-width-45 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* INPUTS */
+
+.input {
+  @apply bg-transparent border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-base font-normal leading-6;
+}
+
 /* UTILS */
+.react-multiple-carousel__arrow--left {
+  left: 0px !important;
+  border-radius: 0 !important;
+  width: 65px;
+  height: 65px;
+  background: #ffffff!important;
+}
+.react-multiple-carousel__arrow--left::before{
+  color: #D89B00!important;
+}
+.react-multiple-carousel__arrow--right {
+  right: 0px !important;
+  border-radius: 0 !important;
+  width: 65px;
+  height: 65px;
+  background: #D89B00!important;
+}
 .responsive_container_width {
   @apply max-w-[85vw] xl:max-w-[86.56vw] 3xl:max-w-[80.56vw]  4xl:max-w-[76.56vw];
 }
+.responsive_about_container_width {
+  @apply max-w-[85vw] xl:max-w-[78.56vw] 3xl:max-w-[70vw]  4xl:max-w-[75vw];
+}
+
 .responsive_container_width_big {
   @apply max-w-[85vw] xl:max-w-[88.56vw] 4xl:max-w-[86.45vw];
 }

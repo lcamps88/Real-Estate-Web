@@ -7,7 +7,7 @@ const WorkWithUs = () => {
       <div className='absolute bg-black bg-contact-opacity-81 flex flex-col justify-center items-center w-full h-full p-10'>
         <Container customStyle='flex flex-col items-center responsive_container_width'>
           <h3 className='text-white'>Work With Us</h3>
-          <p className='text-white'>
+          <p className='text-white text-center'>
             Hendrerit gravida rutrum quisque non tellus orci. Sit amet
             consectetur adipiscing elit duis tristique.
           </p>
