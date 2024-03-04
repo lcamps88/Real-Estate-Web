@@ -53,14 +53,14 @@ const NavbarMenu = () => {
             alt=''
             className='w-28 mb-14 ml-2 xl:ml-10 xl:mb-24'
           />
-          <ul>
+          <ul className='flex flex-col items-center'>
             <li className='mb-10'>
               <Link className='nav_menu hover:text-primary-orange' href='#'>
                 Home
               </Link>
             </li>
             <li className='mb-10'>
-              <Link className='nav_menu hover:text-primary-orange' href='#'>
+              <Link className='nav_menu hover:text-primary-orange' href='/meet-the-team'>
                 Meet the Team
               </Link>
             </li>

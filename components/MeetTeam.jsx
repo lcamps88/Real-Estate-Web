@@ -3,6 +3,7 @@ import Container from './Container'
 import CustomButton from './CustomButton'
 import ServicesCard from './ServicesCard'
 import Realtor from '@/public/images/realtor.webp'
+import Link from 'next/link'
 
 const MeetTeam = () => {
   return (
@@ -84,7 +85,9 @@ const MeetTeam = () => {
           </div>
         </div>
         <div className='flex w-full justify-center lg:pt-5'>
-          <CustomButton className='btn_secondary'>Meet Our Team</CustomButton>
+          <Link href='/meet-the-team'>
+            <CustomButton className='btn_secondary'>Meet Our Team</CustomButton>
+          </Link>
         </div>
       </Container>
     </section>
