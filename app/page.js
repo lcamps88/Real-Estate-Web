@@ -17,7 +17,7 @@ const Home = () => {
       <AboutUs/>
       <MeetTeam/>
       <FeaturedProperties/>
-      <ContactUs/>
+      <ContactUs pTop='xl:pt-40'/>
       <Neighborhood />
       <WorkWithUs />
     </>
