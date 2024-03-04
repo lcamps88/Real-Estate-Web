@@ -4,12 +4,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.webp'
 import Container from './Container'
+import NavbarMenu from './NavbarMenu'
 
 const Header = () => {
   return (
-    <Container className='w-full flex justify-center xl:justify-between responsive_container_width_nav py-7'>
-      <div className='hidden xl:flex pt-4 w-1/4'>
-        <Link className='nav_menu hover:text-primary-orange mr-10' href='#'>
+    <Container className='w-full flex justify-between responsive_container_width_nav py-10'>
+      <div className='hidden xl:flex justify-between pt-6 w-1/4'>
+        <Link className='nav_menu hover:text-primary-orange' href='#'>
           porfolio
         </Link>
         <Link className='nav_menu hover:text-primary-orange' href='#'>
@@ -20,17 +21,19 @@ const Header = () => {
         <Image
           src={Logo}
           alt='Real Estate 4 All logo'
-          className='w-full min-w-[10rem] xl:min-w-[12rem] max-w-[12rem] xl:max-w-[17rem]'
+          className='w-28 xl:min-w-[12rem] max-w-[12rem] xl:max-w-[17rem]'
         />
       </Link>
-      <div className='hidden xl:flex pt-4 w-1/4 '>
-        <Link className='nav_menu hover:text-primary-orange mr-10' href='#'>
+      <div className='flex justify-end xl:justify-between pt-4 w-1/4'>
+        <Link className='hidden xl:flex  nav_menu hover:text-primary-orange' href='#'>
           home search
         </Link>
-        <Link className='nav_menu hover:text-primary-orange' href='#'>
+        <Link className='hidden xl:flex nav_menu hover:text-primary-orange' href='#'>
           contact
         </Link>
+        <NavbarMenu/>
       </div>
+      
     </Container>
   )
 }

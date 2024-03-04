@@ -116,7 +116,7 @@ h4 {
   @apply max-w-[85vw] xl:max-w-[88.56vw] 4xl:max-w-[86.45vw];
 }
 .responsive_container_width_nav {
-  @apply max-w-[90vw] lg:max-w-[95vw] xl:max-w-[90vw] 4xl:max-w-[86.45vw];
+  @apply max-w-[85vw] lg:max-w-[88vw] xl:max-w-[90vw] 4xl:max-w-[86.45vw];
 }
 .responsive_work_card_small {
   @apply w-full h-auto min-h-[50.25vw] md:min-h-[24.25vw] xl:min-h-[16.25vw] max-h-[50.25vw] md:max-h-[24.25vw] xl:max-h-[16.25vw];
