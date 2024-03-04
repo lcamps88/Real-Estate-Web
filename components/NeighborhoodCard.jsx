@@ -13,7 +13,6 @@ const NeighborhoodCard = ({ title, image }) => {
 }
 
 NeighborhoodCard.propTypes = {
-
   title: PropTypes.string,
   image: PropTypes.string,
 }
