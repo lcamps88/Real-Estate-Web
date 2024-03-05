@@ -6,7 +6,7 @@ const Neighborhood = () => {
   return (
     <>
       <div className='w-full flex justify-center py-4 bg-primary-blue '>
-        <Container customStyle='mx-auto flex item-center responsive_container_width'>
+        <Container customStyle='mx-auto flex justify-center responsive_container_width'>
           <h3 className='text-white'>featured neighborhoods</h3>
         </Container>
       </div>
