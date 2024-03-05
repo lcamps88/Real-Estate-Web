@@ -55,7 +55,7 @@ const NavbarMenu = () => {
           />
           <ul className='flex flex-col items-center'>
             <li className='mb-10'>
-              <Link className='nav_menu hover:text-primary-orange' href='#'>
+              <Link className='nav_menu hover:text-primary-orange' href='/'>
                 Home
               </Link>
             </li>

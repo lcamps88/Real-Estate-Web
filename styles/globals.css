@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[4rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
+  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[3.5rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
 }
 
 h3.light {
@@ -81,12 +81,11 @@ h4 {
 @media (max-width: 780px) {
   .custom-width-45 {
     width: 100%;
-    margin-bottom: 40px;
   }
 }
 
 .internal_hero {
-  @apply w-full relative min-h-[35rem] xl:min-h-[30rem];
+  @apply w-full relative min-h-[25rem] xl:min-h-[30vw];
 }
 
 /* INPUTS */

@@ -8,7 +8,7 @@ import Link from 'next/link'
 const MeetTeam = () => {
   return (
     <section className=' w-full flex flex-wrap justify-center bg-white gap-10 lg:gap-0 py-20 xl:pt-0 xl:pb-24'>
-      <Container customStyle='w-full relative lg:-top-[12vw] xl:-top-[8vw] flex flex-wrap justify-between responsive_about_container_width'>
+      <Container customStyle='w-full relative lg:-top-[12vw] xl:-top-[8vw] flex flex-wrap gap-y-12 mb-10 xl:mb-0 xl:gap-y-0 justify-between responsive_about_container_width'>
         <ServicesCard
           title={'selling a home?'}
           url={'#'}
@@ -37,7 +37,7 @@ const MeetTeam = () => {
           </CustomButton>
         </div>
       </Container>
-      <Container customStyle='flex flex-wrap justify-between responsive_about_container_width'>
+      <Container customStyle='flex flex-wrap justify-between gap-y-12 mb-10 xl:mb-0 xl:gap-y-0 responsive_about_container_width'>
         <div className='flex flex-col custom-width-45 gap-y-10'>
           <div className='w-full relative border border-solid	border-primary-orange min-h-[45vw] xl:min-h-[39vw]'>
             <Image
