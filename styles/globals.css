@@ -95,6 +95,13 @@ h4 {
 }
 
 /* UTILS */
+
+@layer utilities {
+  .responsive_container {
+    @apply max-w-[85vw] xl:max-w-[87.70vw] 3xl:max-w-[77.70vw]  4xl:max-w-[67.70vw];
+  }
+}
+
 .react-multiple-carousel__arrow--left {
   left: 0px !important;
   border-radius: 0 !important;
