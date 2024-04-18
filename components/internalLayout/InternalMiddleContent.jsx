@@ -1,7 +1,7 @@
-import Container from './Container'
-import CustomButton from './CustomButton'
+import Container from '../Container'
+import CustomButton from '../CustomButton'
 
-const ContainerCenter = () => {
+const InternalMiddleContent = () => {
   return (
     <div className='w-full flex bg-white min-h-[30.063rem] justify-center items-center py-20 xl:py-24 '>
       <Container customStyle='flex flex-col items-center gap-y-5 xl:px-[10rem] responsive_container_width'>
@@ -23,4 +23,4 @@ const ContainerCenter = () => {
   )
 }
 
-export default ContainerCenter
+export default InternalMiddleContent

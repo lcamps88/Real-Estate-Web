@@ -1,7 +1,6 @@
 import '@/styles/globals.css'
-import Header from '@/components/Header'
+import { Providers } from './providers'
 import Footer from '@/components/Footer'
-
 
 const RootLayout = ({ children }) => {
   return (
@@ -21,12 +20,13 @@ const RootLayout = ({ children }) => {
         />
       </head>
       <body>
-        <main className='full_wrapper'>
-          {children}
-          <Footer/>
-        </main>
+        <Providers>
+          <main className='full_wrapper'>
+            {children}
+            <Footer />
+          </main>
+        </Providers>
       </body>
-
     </html>
   )
 }

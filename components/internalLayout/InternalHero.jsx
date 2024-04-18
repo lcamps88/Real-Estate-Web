@@ -1,5 +1,5 @@
-import Container from './Container'
-import Header from './Header'
+import Container from '../Container'
+import Header from '../Header'
 
 const InternalHero = ({ title, bgImage }) => {
   return (
