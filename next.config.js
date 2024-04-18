@@ -6,5 +6,8 @@ module.exports = {
     config.resolve.modules.push(path.resolve('./'))
     return config
   },
-  publicRuntimeConfig: {},
+  publicRuntimeConfig: {
+    NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN: process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN,
+    NEXT_PUBLIC_MAPBOX_STYLE: process.env.NEXT_PUBLIC_MAPBOX_STYLE,
+  },
 }

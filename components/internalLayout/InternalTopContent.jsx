@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import Container from './Container'
-import CustomButton from './CustomButton'
+import Container from '../Container'
+import CustomButton from '../CustomButton'
 
-const InternalTopDetails = ({ image }) => {
+const InternalTopContent = ({ image }) => {
   return (
     <section className='w-full flex flex-wrap justify-center bg-primary-blue py-20 gap-12 xl:py-24 xl:gap-24'>
       <Container customStyle='w-full flex flex-col gap-y-5 lg:flex-row justify-between flex-wrap responsive_about_container_width xl:px-20 pb-[3.25rem] border-b border-solid border-primary-orange'>
@@ -42,4 +42,4 @@ const InternalTopDetails = ({ image }) => {
   )
 }
 
-export default InternalTopDetails
+export default InternalTopContent

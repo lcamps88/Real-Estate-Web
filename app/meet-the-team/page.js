@@ -1,14 +1,14 @@
 // COMPONENTS
-import InternalHero from '@/components/InternalHero'
-import WorkWithUs from '@/components/WorkWithUs'
 import ContactUs from '@/components/ContactUs'
 import Neighborhood from '@/components/Neighborhood'
-import InternalTopDetails from '@/components/InternalTopDetails'
-import ContainerCenter from '@/components/ContainerCenter'
-import ContainerBottom from '@/components/InternalBottom'
+import WorkWithUs from '@/components/WorkWithUs'
+import ContainerCenter from '@/components/internalLayout/InternalMiddleContent'
+import ContainerBottom from '@/components/internalLayout/InternalBottomContent'
+import InternalHero from '@/components/internalLayout/InternalHero'
+import InternalTopDetails from '@/components/internalLayout/InternalTopContent'
 // UTILIES
-import AboutImage from '@/public/images/selling_home.webp'
 import InternalImage from '@/public/images/internal-image2.webp'
+import AboutImage from '@/public/images/selling_home.webp'
 
 export const metadata = {
   title: 'Meet The Team',

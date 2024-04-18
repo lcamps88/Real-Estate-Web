@@ -1,8 +1,8 @@
-import Container from './Container'
-import CustomButton from './CustomButton'
 import Image from 'next/image'
+import Container from '../Container'
+import CustomButton from '../CustomButton'
 
-const InternalBottom = ({ image }) => {
+const InternalBottomContent = ({ image }) => {
   return (
     <section className='w-full flex flex-wrap justify-center bg-white-light py-20 xl:py-24'>
       <Container customStyle='w-full flex flex-wrap  justify-between responsive_about_container_width min-h-[30.063rem] gap-y-10 xl:gap-y-0'>
@@ -24,7 +24,7 @@ const InternalBottom = ({ image }) => {
           <Image
             src={image}
             alt=''
-            className='w-full h-full bg-cover bg-no-repeat bg-center '
+            className='w-full h-full bg-cover bg-no-repeat bg-center'
           />
         </div>
       </Container>
@@ -32,4 +32,4 @@ const InternalBottom = ({ image }) => {
   )
 }
 
-export default InternalBottom
+export default InternalBottomContent
