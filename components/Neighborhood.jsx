@@ -11,8 +11,8 @@ const Neighborhood = () => {
         </Container>
       </div>
       <div className='w-full flex flex-wrap justify-between'>
-        <NeighborhoodCard title='Palm beach' image='bg-neighborhoods1' />
-        <NeighborhoodCard title='west palm beach' image='bg-neighborhoods2' />
+        <NeighborhoodCard title='Palm beach' image='bg-neighborhoods1' effect='flip-left'/>
+        <NeighborhoodCard title='west palm beach' image='bg-neighborhoods2' effect='flip-right'/>
       </div>
       <CustomButton className='w-full btn_full py-6'>View All</CustomButton>
     </>

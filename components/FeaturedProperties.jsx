@@ -44,8 +44,8 @@ export const PropertyCard = ({ image, type, description, price }) => {
 const FeaturedProperties = () => {
   return (
     <section className='w-full flex flex-wrap bg-primary-blue pt-20 pb-20 xl:pb-0 xl:pt-24 gap-y-10 xl:gap-y-0'>
-      <Container customStyle='mx-auto responsive_container_width'>
-        <h3 className='text-white'>featured properties</h3>
+      <Container customStyle='mx-auto responsive_container_width' >
+        <h3 data-aos='fade-down' className='text-white'>featured properties</h3>
       </Container>
       <Container customStyle='mx-auto relative xl:top-[4.5vw] 3xl:top-[3.5vw] responsive_container_width'>
         <Carousel

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import animationData from '@/public/lottie/menu.json'
 import Image from 'next/image'
 import Lottie from 'lottie-web'
-import Logo from '@/public/images/logo.webp'
+import Logo from '@/public/images/logo.png'
 import Link from 'next/link'
 
 const NavbarMenu = () => {
