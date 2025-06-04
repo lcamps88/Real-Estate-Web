@@ -91,7 +91,32 @@ h4 {
 /* INPUTS */
 
 .input {
-  @apply bg-transparent border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-base font-normal leading-6;
+  @apply bg-transparent border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-[18px] font-normal leading-6;
+}
+
+.inputWhite {
+  @apply bg-white border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-base font-normal leading-6;
+}
+
+input{
+  @apply text-[18px]
+}
+
+.error {
+  @apply text-primary-red absolute bottom-0 left-0;
+}
+
+.newsletterForm {
+  border: 1px solid #3f3f3f;
+  font-size: 1rem;
+}
+.newsletterForm div {
+  background-color: #ffffff !important;
+}
+
+.newsletterForm label {
+  color: #3f3f3f;
+  font-size: 18px;
 }
 
 /* UTILS */
