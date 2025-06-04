@@ -9,8 +9,8 @@ import Link from 'next/link'
 const MeetTeam = () => {
   return (
     <section className=' w-full flex flex-wrap justify-center bg-white gap-10 lg:gap-0 py-20 xl:pt-0 xl:pb-24'>
-      <Container customStyle='w-full relative lg:-top-[12vw] xl:-top-[8vw] flex flex-wrap gap-y-12 mb-10 xl:mb-0 xl:gap-y-0 justify-between responsive_about_container_width'>
-        <ServicesCard
+      <Container data-aos='fade-up' customStyle='w-full relative lg:-top-[12vw] xl:-top-[8vw] flex flex-wrap gap-y-12 mb-10 xl:mb-0 xl:gap-y-0 justify-between responsive_about_container_width'>
+        <ServicesCard 
           title={'selling a home?'}
           url={'#'}
           content={'Sagittis id consectetur purus ut faucibus.'}
@@ -25,7 +25,7 @@ const MeetTeam = () => {
           image='bg-buying_home'
         />
       </Container>
-      <Container customStyle='flex flex-wrap justify-center flex-wrap responsive_container_width mb-10 lg:mb-20 xl:mb-40 3xl:mb-52'>
+      <Container  data-aos='fade-down' customStyle='flex flex-wrap justify-center flex-wrap responsive_container_width mb-10 lg:mb-20 xl:mb-40 3xl:mb-52'>
         <div className='flex flex-col items-center max-w-[80vw] lg:max-w-[85vw] xl:max-w-[55vw] 3xl:max-w-[40vw] gap-5 lg:gap-8'>
           <h4>testimonials</h4>
           <h3 className='light text-primary-grey'>
@@ -39,7 +39,7 @@ const MeetTeam = () => {
         </div>
       </Container>
       <Container customStyle='flex flex-wrap justify-between gap-y-12 mb-10 xl:mb-0 xl:gap-y-0 responsive_about_container_width'>
-        <div className='flex flex-col custom-width-45 gap-y-10'>
+        <div data-aos='fade-left' className='flex flex-col custom-width-45 gap-y-10'>
           <div className='w-full relative border border-solid	border-primary-orange min-h-[45vw] xl:min-h-[39vw]'>
             <Image
               src={Realtor}
@@ -62,7 +62,7 @@ const MeetTeam = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col custom-width-45 gap-y-10'>
+        <div data-aos='fade-right' className='flex flex-col custom-width-45 gap-y-10'>
           <div className='w-full relative border border-solid	border-primary-orange min-h-[45vw] xl:min-h-[39vw]'>
             <Image
               src={Realtor2}

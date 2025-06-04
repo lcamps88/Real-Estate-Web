@@ -10,10 +10,10 @@ const Header = () => {
   return (
     <Container className='w-full flex justify-between responsive_container_width_nav py-10'>
       <div className='hidden xl:flex justify-between pt-6 w-1/4'>
-        <Link className='nav_menu hover:text-primary-orange' href='#'>
-          porfolio
+        <Link className='nav_menu hover:text-primary-orange' href='/meet-the-team'>
+          meet team
         </Link>
-        <Link className='nav_menu hover:text-primary-orange' href='#'>
+        <Link className='nav_menu hover:text-primary-orange' href='/neighborhoods'>
           neighborhoods
         </Link>
       </div>

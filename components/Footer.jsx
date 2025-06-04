@@ -1,7 +1,6 @@
 import Container from './Container'
 import Link from 'next/link'
 import Image from 'next/image'
-import LogoLink from '@/public/images/footer-link.webp'
 import LogoFooter from '@/public/images/logo-footer.png'
 import facebook from '@/public/icons/facebook.svg'
 import instagram from '@/public/icons/instagram.svg'
