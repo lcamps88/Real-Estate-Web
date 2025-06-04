@@ -28,7 +28,7 @@ const Header = () => {
         <Link className='hidden xl:flex  nav_menu hover:text-primary-orange' href='#'>
           home search
         </Link>
-        <Link className='hidden xl:flex nav_menu hover:text-primary-orange' href='#'>
+        <Link className='hidden xl:flex nav_menu hover:text-primary-orange' href='/contact-us'>
           contact
         </Link>
         <NavbarMenu/>

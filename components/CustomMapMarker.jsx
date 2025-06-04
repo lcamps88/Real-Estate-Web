@@ -1,14 +1,30 @@
+import { useState } from 'react'
 import { Marker } from 'react-map-gl'
 import { HiMiniHome } from 'react-icons/hi2'
 
 import PropTypes from 'prop-types'
 
-const CustomMapMarker = ({ latitude, longitude, anchor, onClick }) => {
+const CustomMapMarker = ({
+  latitude,
+  longitude,
+  anchor,
+  onClick,
+  activeColor,
+  defaultColor,
+  isSelected,
+}) => {
+  const [isActive, setIsActive] = useState(false)
+
+  const handleClick = () => {
+    setIsActive(!isActive)
+    onClick()
+  }
+
   return latitude && longitude ? (
-    <Marker latitude={latitude} longitude={longitude} anchor={anchor || 'top' }>
+    <Marker latitude={latitude} longitude={longitude} anchor={anchor || 'top'}>
       <HiMiniHome
-        className='fill-primary-blue'
-        onClick={onClick}
+        className={isSelected ? activeColor : defaultColor}
+        onClick={handleClick}
         size={20}
         sx={{ cursor: 'pointer' }}
       />
@@ -23,6 +39,8 @@ CustomMapMarker.propTypes = {
   longitude: PropTypes.number.isRequired,
   anchor: PropTypes.string,
   onClick: PropTypes.func,
+  activeColor: PropTypes.string,
+  defaultColor: PropTypes.string,
 }
 
 export default CustomMapMarker

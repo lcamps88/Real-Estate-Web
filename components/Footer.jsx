@@ -32,7 +32,7 @@ const Footer = () => {
           <Link href='#' passHref className='link_footer text-white'>
             Home Search
           </Link>
-          <Link href='#' passHref className='link_footer text-white'>
+          <Link href='/contact-us' passHref className='link_footer text-white'>
             Contact Us{' '}
           </Link>
         </div>
