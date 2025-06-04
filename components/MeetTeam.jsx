@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Container from './Container'
 import CustomButton from './CustomButton'
 import ServicesCard from './ServicesCard'
-import Realtor from '@/public/images/realtor.webp'
+import Realtor from '@/public/images/realtor.png'
+import Realtor2 from '@/public/images/realtor3.webp'
 import Link from 'next/link'
 
 const MeetTeam = () => {
@@ -64,7 +65,7 @@ const MeetTeam = () => {
         <div className='flex flex-col custom-width-45 gap-y-10'>
           <div className='w-full relative border border-solid	border-primary-orange min-h-[45vw] xl:min-h-[39vw]'>
             <Image
-              src={Realtor}
+              src={Realtor2}
               alt='Realtor'
               className='static lg:absolute  bottom-0'
             />

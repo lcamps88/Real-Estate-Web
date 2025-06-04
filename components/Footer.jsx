@@ -2,7 +2,7 @@ import Container from './Container'
 import Link from 'next/link'
 import Image from 'next/image'
 import LogoLink from '@/public/images/footer-link.webp'
-import LogoFooter from '@/public/images/footer_logo.webp'
+import LogoFooter from '@/public/images/logo-footer.png'
 import facebook from '@/public/icons/facebook.svg'
 import instagram from '@/public/icons/instagram.svg'
 import twitter from '@/public/icons/twitter.svg'
@@ -52,7 +52,7 @@ const Footer = () => {
             123-456-7890{' '}
           </Link>
           <Link href='#' passHref className='link_footer text-primary-orange'>
-            info@realestate4all.com{' '}
+            info@realestateflorida.com{' '}
           </Link>
         </div>
         <div className='flex flex-row flex-wrap justify-center gap-x-10 xl:gap-x-0 xl:justify-between w-full xl:w-1/6'>
@@ -84,23 +84,17 @@ const Footer = () => {
           </p>
         </div>
       </Container>
-      <Container customStyle='flex flex-col lg:flex-row flex-wrap gap-y-5 lg:gap-y-0 responsive_container_width line_footer'>
+      <Container customStyle='flex flex-col justify-center gap-y-5 lg:gap-y-0 responsive_container_width line_footer'>
         <div className='text-primary-grey'>
           <p className='mb-0'>
-            © Copyright {currentYear}. Real Estate 4 All. All Rights Reserved. |
+            © Copyright {currentYear}. Real Estate Florida. All Rights Reserved. |
             <Link href='#' className='link_footer'>
               {' '}
               Privacy Policy{' '}
             </Link>
           </p>
         </div>
-        <div className='flex flex-row items-center'>
-          <p className='mb-0 gap-x-5'>Website by: </p>
-          <Link href='/' passHref>
-            {' '}
-            <Image src={LogoLink} alt='ITorres Solution' width={134} />
-          </Link>
-        </div>
+       
       </Container>
     </footer>
   )
