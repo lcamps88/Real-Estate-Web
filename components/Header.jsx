@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '@/public/images/logo.webp'
+import Logo from '@/public/images/logo.png'
 import Container from './Container'
 import NavbarMenu from './NavbarMenu'
 
