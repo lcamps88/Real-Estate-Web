@@ -29,28 +29,25 @@ Project Structure
 /styles       → Global styles
 🚀 Getting Started
 1. Clone the repository
-
 git clone https://github.com/lcamps88/Real-Estate-Web.git
 cd Real-Estate-Web
+
 2. Install dependencies
-
 npm install
-3. Run the development server
 
+3. Run the development server
 npm run dev
 Open http://localhost:3000 to view the app.
 
 Deployment
 Deploy effortlessly with Vercel — fully optimized for Next.js.
 
-🔐 Environment Variables
+🔐 Environment Variables:
 Create a .env.local file for your API keys:
-
-
 NEXT_PUBLIC_EMAILJS_KEY=your_emailjs_key
-👩‍💻 Author
+
+👩‍💻 Author: 
 Lisandra Camps
-GitHub: @lcamps88
 
 📄 License
 This project is licensed under the MIT License.
