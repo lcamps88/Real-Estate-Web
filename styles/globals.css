@@ -7,24 +7,32 @@
 
 /* FONTS */
 
-h1 {
-  @apply font-satoshi text-5xl md:text-6xl lg:text-7xl xl:text-[5rem] 2xl:text-8xl 3xl:text-[7rem] font-light leading-[4rem] uppercase text-center tracking-[.19em] md:tracking-[.12em] md:leading-[5rem] xl:leading-[6rem] 2xl:leading-[7.5rem]; /* 120px */
-}
-
 h1.internal {
   @apply font-satoshi text-4xl md:text-5xl xl:text-6xl 2xl:text-[4rem] font-light leading-[3rem] md:leading-[3.8rem] lg:leading-[4rem] 2xl:leading-[5rem] tracking-[.12em] xl:tracking-[.19em] text-center uppercase; /* 64px */
 }
 
+h1 {
+  @apply font-satoshi text-[2rem] md:text-5xl xl:text-6xl 2xl:text-[4rem] font-light leading-[3rem] md:leading-[3.8rem] lg:leading-[4rem] 2xl:leading-[5rem] tracking-[.10em] xl:tracking-[.19em] text-center uppercase; /* 64px */
+}
+
 h2 {
-  @apply font-satoshi text-4xl md:text-5xl xl:text-6xl 2xl:text-[4rem] font-light leading-[3rem] md:leading-[3.8rem] lg:leading-[4rem] 2xl:leading-[5rem] tracking-[.12em] xl:tracking-[.19em] text-center uppercase; /* 64px */
+  @apply font-satoshi text-3xl md:text-5xl xl:text-6xl 2xl:text-[4rem] font-light leading-[3rem] md:leading-[3.8rem] lg:leading-[4rem] 2xl:leading-[5rem] tracking-[.12em] xl:tracking-[.19em] text-center uppercase; /* 64px */
 }
 
 h3 {
-  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[3.5rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
+  @apply font-satoshi text-2xl 2xl:text-4xl font-light leading-[2.5rem] 2xl:leading-[3rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
 }
 
 h3.light {
-  @apply font-satoshi text-3xl 2xl:text-4xl font-light leading-[3rem] 2xl:leading-[3.2rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
+  @apply font-satoshi text-2xl xl:text-4xl font-light leading-[2.5rem] xl:leading-[3.5rem] tracking-[.19em] md:tracking-[.12em] text-center uppercase; /*40px */
+}
+
+h3.property {
+  @apply font-satoshi text-2xl xl:text-3xl 4xl:text-4xl font-normal leading-[2.5rem] xl:leading-[3.5rem] tracking-[.19em] md:tracking-[.10em] uppercase; /*40px */
+}
+
+.property_page {
+  @apply font-satoshi text-4xl 4xl:text-2xl font-normal; /*40px */
 }
 
 p {
@@ -46,18 +54,17 @@ h4 {
 /* BUTTONS */
 
 .btn_primary {
-  @apply inline-block font-outfit text-white leading-5 text-base font-bold uppercase tracking-[.31em] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange hover:bg-primary-orange;
+  @apply inline-block font-outfit text-white leading-5 text-base font-medium xl:font-bold uppercase tracking-[.2em] xl:tracking-[.31em] text-center py-[1rem] px-8 xl:px-[3.438rem] border border-solid	border-primary-orange hover:bg-primary-orange;
 }
 
 .btn_secondary {
-  @apply inline-block font-outfit text-primary-orange text-sm leading-5  font-bold uppercase tracking-[.31em] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange hover:bg-white;
+  @apply inline-block font-outfit text-primary-orange text-sm leading-5  font-bold uppercase tracking-[.31em] text-center py-[1rem] px-[3.438rem] border border-solid	border-primary-orange hover:bg-primary-orange hover:text-white;
 }
 
 .btn_full {
   @apply inline-block font-outfit text-white text-sm leading-5 font-bold uppercase tracking-[.31em] text-center bg-primary-orange;
 }
 
-/* GRADIENT ELEMENTS */
 /* SECTIONS */
 
 .full_wrapper {
@@ -72,16 +79,50 @@ h4 {
 }
 
 .hero {
-  @apply w-full relative min-h-[55rem] xl:min-h-[60rem];
+  @apply w-full relative min-h-[45rem] md:min-h-[50rem] xl:min-h-[60rem];
 }
 
+.price-width-45 {
+  width: 42%;
+}
+.card-width-45 {
+  width: 47%;
+}
+
+.card-Property-width {
+  width: 48%;
+}
 .custom-width-45 {
   width: 47%;
 }
-@media (max-width: 780px) {
+.custom-width-30 {
+  width: 32%;
+}
+@media (max-width: 800px) {
   .custom-width-45 {
     width: 100%;
   }
+}
+
+@media (max-width: 700px) {
+  .card-Property-width {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .custom-width-30 {
+    width: 100%;
+  }
+  .card-width-45 {
+    width: 100%;
+  }
+  .price-width-45 {
+    width: 100%;
+  }
+}
+
+.black-overlay {
+  @apply absolute top-0 left-0 w-full h-full bg-black z-10 transition-opacity duration-500 ease-in-out opacity-100
 }
 
 .internal_hero {
@@ -89,21 +130,17 @@ h4 {
 }
 
 /* INPUTS */
-
-.input {
-  @apply bg-transparent border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-[18px] font-normal leading-6;
-}
-
-.inputWhite {
-  @apply bg-white border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-base font-normal leading-6;
-}
-
 input{
   @apply text-[18px]
 }
 
-.error {
-  @apply text-primary-red absolute bottom-0 left-0;
+.inputSearch {
+  border: 1px solid #3f3f3f;
+  font-size: 18px;
+}
+.inputSearch div {
+  background-color: #ffffff !important;
+  height: 50px;
 }
 
 .newsletterForm {
@@ -119,14 +156,22 @@ input{
   font-size: 18px;
 }
 
-/* UTILS */
-
-@layer utilities {
-  .responsive_container {
-    @apply max-w-[85vw] xl:max-w-[87.70vw] 3xl:max-w-[77.70vw]  4xl:max-w-[67.70vw];
-  }
+.input {
+  @apply bg-transparent border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-[18px] font-normal leading-6;
 }
 
+.inputWhite {
+  @apply bg-white border border-solid px-4 py-4 w-full text-primary-grey font-outfit text-base font-normal leading-6;
+}
+
+.error {
+  @apply text-primary-red absolute bottom-0 left-0;
+}
+
+/* UTILS */
+.react-multi-carousel-track {
+  align-items: center;
+}
 .react-multiple-carousel__arrow--left {
   left: 0px !important;
   border-radius: 0 !important;
@@ -151,6 +196,10 @@ input{
   @apply max-w-[85vw] xl:max-w-[78.56vw] 3xl:max-w-[70vw]  4xl:max-w-[75vw];
 }
 
+.responsive_contact_container_width {
+  @apply max-w-[85vw] xl:max-w-[78.56vw] 3xl:max-w-[70vw];
+}
+
 .responsive_container_width_big {
   @apply max-w-[85vw] xl:max-w-[88.56vw] 4xl:max-w-[86.45vw];
 }
@@ -162,4 +211,51 @@ input{
 }
 .responsive_work_card_big {
   @apply w-full h-auto min-h-[105.25vw] md:min-h-[52.33vw] xl:min-h-[35.33vw] max-h-[105.25vw] md:max-h-[52.33vw] xl:max-h-[35.33vw];
+}
+
+.responsive_container_full_width {
+  @apply max-w-[85vw] lg:max-w-full;
+}
+
+#plunk-valuation-wrapper {
+  padding: 3rem !important;
+}
+
+.pv-powered-container {
+  display: none;
+}
+
+.mapboxgl-popup-close-button {
+  right: 5px !important;
+  top: 5px !important;
+  background-color: #00163e !important;
+  cursor: pointer;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50% !important;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center !important;
+  text: center !important;
+}
+
+.mapboxgl-popup-content {
+  padding: 0px !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.mapboxgl-popup {
+  border: none;
+}
+
+output.text-small {
+  text-align: right;
+}
+
+div.overflow-y-auto[data-slot="listboxWrapper"].max-h-64 {
+  max-height: 500px;
 }
