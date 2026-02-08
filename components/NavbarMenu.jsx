@@ -66,7 +66,7 @@ const NavbarMenu = () => {
             </li>
             <li className='mb-10'>
               {' '}
-              <Link className='nav_menu hover:text-primary-orange' href='#'>
+              <Link className='nav_menu hover:text-primary-orange' href='/home-search'>
                 Home Search
               </Link>
             </li>
